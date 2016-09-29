@@ -107,8 +107,9 @@ jQuery(function($) {
                     name: "Impressions",
                     data: [data.impressions.value],
                     dataLabels: {
-                        format: '<div style="text-align:center"><span style="font-size:25px;color:' + ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span><br/>' +
-                        '<span style="font-size:12px;color:silver">Impressions</span></div>'
+                        format: '<div style="text-align:center"><span style="font-size:25px;color:'
+                        + ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.0f}</span><br/>'
+                        + '<span style="font-size:12px;color:silver">Impressions</span></div>'
                     },
                     tooltip: {
                         valueSuffix: ' Impressions'
